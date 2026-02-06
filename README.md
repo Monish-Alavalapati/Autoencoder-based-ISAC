@@ -99,7 +99,7 @@ The receiver is composed of four specialized sub-networks:
 * **MATLAB** (R2020b or newer recommended)
 * **Python 3.x**
 * **PyTorch, NumPy, Matplotlib, SciPy, h5py**
-
+    
 ### 2. Workflow
 1.  **Data Generation**: Open MATLAB and run `AE.m`. This generates `isac_data.mat` with 500,000 training samples by default.
 2.  **Training**: Run the Python script:
@@ -121,3 +121,7 @@ Where $\omega_r$ (default 0.09) balances the trade-off between sensing accuracy 
 Based on simulations with hardware impairments:
 * **Uncertainty Calibration**: The model learns to estimate its own error; the actual error follows the estimated $\sigma$.
 * **Detection Performance**: Clear separation in detection scores ($q$) between $H_0$ (no target) and $H_1$ (target present).
+
+## Acknowledgements
+
+Special thanks to [Charitha S](https://github.com/Cherry-29) for providing continuous aid and support in developing the project.
